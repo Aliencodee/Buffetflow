@@ -23,5 +23,5 @@ def criar_cliente(cliente: Cliente):
     return novo_cliente
 
 @app.get("/clientes")
-def listar_clientes():
+def listar_clientes() -> list[Cliente]:
     return clientes_db
