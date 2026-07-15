@@ -21,3 +21,7 @@ def criar_cliente(cliente: Cliente):
     clientes_db.append(novo_cliente)
     proximo_id += 1
     return novo_cliente
+
+@app.get("/clientes")
+def listar_clientes():
+    return clientes_db
